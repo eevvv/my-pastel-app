@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Protected Area{% endblock %}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #2e7d32;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            max-width: 500px;
+        }
+        h1 {
+            color: #388e3c;
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #81c784;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #66bb6a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 {{ _('Welcome to the Protected Area!') }}</h1>
+        <p>{{ _('Only authenticated users can see this page.') }}</p>
+
+
+        <p><strong>{{ _('Username:') }}</strong> {{ user.username }}</p>
+
+
+        <a href="{% url 'logout' %}" class="btn">{{ _('Log Out') }}</a>
+    </div>
+</body>
+</html>

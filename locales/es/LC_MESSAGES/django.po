@@ -1,0 +1,242 @@
+# Spanish translation for django project.
+# Copyright (C) 2023 YOUR_NAME
+# This file is distributed under the same license as the django project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-28 11:19+0300\n"
+"PO-Revision-Date: 2023-04-15 12:00+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\myapp\templates\index.html:149
+msgid "Hello, Beautiful Soul"
+msgstr "Hola, alma hermosa"
+
+#: .\myapp\templates\index.html:151
+msgid "Welcome to this little corner of calm."
+msgstr "Bienvenido a este pequeño rincón de calma."
+
+#: .\myapp\templates\index.html:152
+msgid "Take a deep breath, relax, and enjoy the gentle colors around you."
+msgstr ""
+"Tome una respiración profunda, relájese y disfrute de los suaves colores que "
+"lo rodean."
+
+#: .\myapp\templates\index.html:153
+msgid "You’re doing great — one step at a time."
+msgstr "Lo estás haciendo muy bien — paso a paso."
+
+#: .\myapp\templates\index.html:158
+msgid "Greeting Form"
+msgstr "Formulario de saludo"
+
+#: .\myapp\templates\index.html:160
+msgid "Enter your name"
+msgstr "Ingrese su nombre"
+
+#: .\myapp\templates\index.html:161
+msgid "Enter your message"
+msgstr "Ingrese su mensaje"
+
+#: .\myapp\templates\index.html:162
+msgid "Send with love 💖"
+msgstr "Enviar con amor 💖"
+
+#: .\myapp\templates\index.html:168
+msgid "Contact Us"
+msgstr ""
+
+#: .\myapp\templates\index.html:171
+msgid "Your email"
+msgstr "Su correo electrónico"
+
+#: .\myapp\templates\index.html:172
+#, fuzzy
+#| msgid "Enter your message"
+msgid "Your message"
+msgstr "Ingrese su mensaje"
+
+#: .\myapp\templates\index.html:173
+#, fuzzy
+#| msgid "Message:"
+msgid "Send Message"
+msgstr "Mensaje:"
+
+#: .\myapp\templates\index.html:179
+msgid "Order Product"
+msgstr "Pedir producto"
+
+#: .\myapp\templates\index.html:182
+#, fuzzy
+#| msgid "Enter your name"
+msgid "Your name"
+msgstr "Ingrese su nombre"
+
+#: .\myapp\templates\index.html:183
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: .\myapp\templates\index.html:185
+msgid "-- Select Product --"
+msgstr "-- Seleccione un producto --"
+
+#: .\myapp\templates\index.html:186
+msgid "Laptop"
+msgstr "Portátil"
+
+#: .\myapp\templates\index.html:187
+msgid "Smartphone"
+msgstr "Teléfono inteligente"
+
+#: .\myapp\templates\index.html:188
+msgid "Book"
+msgstr "Libro"
+
+#: .\myapp\templates\index.html:190
+msgid "Place Order"
+msgstr "Realizar pedido"
+
+#: .\myapp\templates\index.html:197
+msgid "💌 Your message is received:"
+msgstr "💌 Su mensaje ha sido recibido:"
+
+#: .\myapp\templates\index.html:198
+msgid "Name:"
+msgstr "Nombre:"
+
+#: .\myapp\templates\index.html:199
+msgid "Message:"
+msgstr "Mensaje:"
+
+#: .\myapp\templates\index.html:214
+#, fuzzy
+#| msgid "Feel Inspired"
+msgid " Feel   Inspired "
+msgstr "Sentirse inspirado"
+
+#: .\myapp\templates\index.html:217
+#, fuzzy
+#| msgid "— Designed with pastel love —"
+msgid "—  Designed   with   pastel   love  —"
+msgstr "— Diseñado con amor pastel —"
+
+#: .\myapp\templates\index.html:227
+msgid "Hello,"
+msgstr "Hola,"
+
+#: .\myapp\templates\index.html:228
+msgid "Go to Protected Page"
+msgstr "Ir a la página protegida"
+
+#: .\myapp\templates\index.html:229 .\myapp\templates\protected.html:61
+msgid "Log Out"
+msgstr "Cerrar sesión"
+
+#: .\myapp\templates\index.html:231 .\myapp\templates\login.html:101
+msgid "Log In"
+msgstr ""
+
+#: .\myapp\templates\index.html:232
+msgid "Register"
+msgstr "Iniciar sesión"
+
+#: .\myapp\templates\login.html:87
+msgid "Welcome Back!"
+msgstr "¡Bienvenido de nuevo!"
+
+#: .\myapp\templates\login.html:94 .\myapp\templates\protected.html:58
+#: .\myapp\templates\register.html:95
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: .\myapp\templates\login.html:98 .\myapp\templates\register.html:106
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: .\myapp\templates\login.html:103
+msgid "Don't have an account? Register"
+msgstr "¿No tienes una cuenta? Regístrate"
+
+#: .\myapp\templates\protected.html:54
+#, fuzzy
+#| msgid "Welcome to this little corner of calm."
+msgid "Welcome to the Protected Area!"
+msgstr "Bienvenido a este pequeño rincón de calma."
+
+#: .\myapp\templates\protected.html:55
+msgid "Only authenticated users can see this page."
+msgstr "Solo los usuarios autenticados pueden ver esta página."
+
+#: .\myapp\templates\register.html:89
+msgid "Create Your Account"
+msgstr "Crea tu cuenta"
+
+#: .\myapp\templates\register.html:117
+msgid "Password confirmation:"
+msgstr "Confirmación de contraseña:"
+
+#: .\myapp\templates\register.html:127
+msgid "Sign Up"
+msgstr "Regístrate"
+
+#: .\myapp\templates\register.html:129
+msgid "Already have an account? Log in"
+msgstr "¿Ya tienes una cuenta? Inicia sesión"
+
+#: .\myapp\views.py:20
+#, fuzzy
+#| msgid "Enter your message"
+msgid "Thank you for your message!"
+msgstr "Ingrese su mensaje"
+
+#: .\myapp\views.py:22 .\myapp\views.py:42
+msgid "Please fill all fields."
+msgstr "Por favor, complete todos los campos."
+
+#: .\myapp\views.py:31
+msgid "laptop"
+msgstr "portátil"
+
+#: .\myapp\views.py:32
+msgid "smartphone"
+msgstr "teléfono inteligente"
+
+#: .\myapp\views.py:33
+msgid "book"
+msgstr "libro"
+
+#: .\myapp\views.py:38
+#, fuzzy, python-brace-format
+#| msgid "Your order for %(product)s has been received!"
+msgid "Your order for {product} has been received!"
+msgstr "¡Hemos recibido su pedido de %(product)s!"
+
+#: .\myapp\views.py:70
+msgid "Registration successful! You are now logged in."
+msgstr "¡Registro exitoso! Ahora ha iniciado sesión."
+
+#: .\myapp\views.py:73
+msgid "Please correct the errors below."
+msgstr "Por favor, corrija los errores a continuación."
+
+#: .\myapp\views.py:86
+msgid "You have successfully logged in."
+msgstr "Ha iniciado sesión correctamente."
+
+#: .\myapp\views.py:89
+msgid "Invalid username or password."
+msgstr "Nombre de usuario o contraseña incorrectos."
+
+#: .\myapp\views.py:95
+msgid "You have been logged out."
+msgstr "Ha cerrado sesión."

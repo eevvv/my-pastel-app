@@ -1,0 +1,103 @@
+<!-- myapp/templates/register.html -->
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Register{% endblock %}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fce8e6, #e3f2fd);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #5a5a5a;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            max-width: 400px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #d4a5a5;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 12px;
+            max-width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #b5d8e8;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #9ac8de;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b5d8e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #9ac8de;
+        }
+        .error {
+            color: #d9534f;
+            font-size: 0.9rem;
+            margin: 5px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ _('Create Your Account') }}</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="{{ _('Username') }}" required>
+            <input type="password" name="password1" placeholder="{{ _('Password') }}" required>
+            <input type="password" name="password2" placeholder="{{ _('Confirm Password') }}" required>
+            <input type="submit" value="{{ _('Sign Up') }}">
+        </form>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="error">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        <a href="{% url 'login' %}" class="btn">{{ _('Already have an account? Log in') }}</a>
+    </div>
+</body>
+</html>
